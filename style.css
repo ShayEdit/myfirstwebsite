@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    line-height: 2.5;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+/* Header Styling */
+header {
+    background: #0000ff;
+    width: 100%;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+
+/*Navigation Styling*/
+nav {
+    border: 2px solid #0000ff;
+    width: 100%;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: 0px;
+    background-color: #0000ff;
+    
+}
+body {
+    font-family : Arial, Verdana, Arial, Helvetica, sans-serif;
+    
+  
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+
+}
+
+nav a { 
+    text-decoration: none;
+    color:#fff;
+    font-weight: none;
+
+}
+
+nav a:hover {
+    color:aquamarine
+}
+/* Main Content */
+main {
+    background: #fff;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #0000ff;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+

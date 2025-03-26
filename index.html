@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
     <title>The Zone</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style> 
 </head>
 <body>
     <header>
-        <h1>Welcome to the zone</h1>
+        <h1>THE ZONE</h1>
     </header>
+    <!-- Navigation Bar-->
+<div id="navbar"></div>
+<script>
+    fetch("navbar.html") 
+    .then(response => response.text())
+    .then(data => document.getElementById(`navbar`).innerHTML = data);
+</script>
+<br>
+
     <main>
-        <p>This is the main content of the page.</p>
+        <p>Welcome to The Zone. 
+            <br>
+             A space for you to tune out the world, learn more about ADHD, and find resources to help you succeed. 
+            <br>
+            Take a moment to take a deep breath, relax and figure out what you need to do to get back in the zone.
+            <br>
+
+
+        </p>
     </main>
     <footer>
-        <p>&copy; 2025 </p>
+        <p>&copy; The Zone 2025 </p>
     </footer>
 </body>
 </html>
 <script>
-    // Add interactivity or functionality to your webpage
-    console.log("Welcome to the zone!");
+    
+    console.log("THE ZONE");
 </script>
+
+
+
