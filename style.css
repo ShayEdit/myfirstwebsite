@@ -9,7 +9,7 @@
 body {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     line-height: 2.5;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
     padding: 0px;
     margin-top: 15px;
@@ -66,13 +66,23 @@ nav a:hover {
 }
 /* Main Content */
 main {
-    background: #fff;
+    background: transparent;
     padding: 20px;
-    margin: 15px auto;
+    margin: 0px auto;
     max-width: 800px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: none;
+    
 }
+
+/*Header Image*/
+#header-image {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px; 
+    justify-content: center; 
+}
+
 
 /* Footer Styling */
 footer {
