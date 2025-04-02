@@ -47,7 +47,7 @@ function checkAnswers() {
     alert(`The chore you should do today is ${result}`);
 }
 
-// Ensure the function is bound correctly
+
 document.addEventListener("DOMContentLoaded", function () {
     let submitButton = document.querySelector("button");
     if (submitButton) {
@@ -105,7 +105,7 @@ function checkAnswers() {
     alert(`The chore you should do today is ${result}`);
 }
 
-// Ensure the function is bound correctly
+
 document.addEventListener("DOMContentLoaded", function () {
     let submitButton = document.querySelector("button");
     if (submitButton) {
