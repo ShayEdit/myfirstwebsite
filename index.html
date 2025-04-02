@@ -19,7 +19,7 @@
     <header>
         <h1>THE ZONE</h1>
     </header>
-    <!-- Navigation Bar-->
+    <!-- Navigation Bar linking to seperate navbar html-->
 <div id="navbar"></div>
 <script>
     fetch("navbar.html") 
@@ -27,18 +27,26 @@
     .then(data => document.getElementById(`navbar`).innerHTML = data);
 </script>
 <br>
-<img src="test.png" alt="The Zone Logo" id="header-image" width: >
+<!--Header Image-->
 
+<img src="thezzone.png" alt="The Zone Logo" id="header-image" >
+
+<!--Main Content-->
     <main>
         <p>Welcome to The Zone. 
             <br>
              A space for you to tune out the world, learn more about ADHD, and find resources to help you succeed. 
+            <br>
+            Created by a fellow ADHDer, The Zone is a labour of love designed to help you refocus, learn and grow.
+            There are quizzes to discover fun new things about yourself, a void to throw all your worries in to, resources to help you learn more about ADHD, and even a zone out section for when you need a break. 
             <br>
             Take a moment to take a deep breath, relax and figure out what you need to do to get back in the zone.
             <br>
 
 
         </p>
+
+        <!--Footer-->
     </main>
     <footer>
         <p>&copy; The Zone 2025 </p>

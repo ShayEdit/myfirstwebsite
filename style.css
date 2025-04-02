@@ -13,6 +13,7 @@ body {
     color: #333;
     padding: 0px;
     margin-top: 15px;
+    margin: 20px
 }
 
 /* Header Styling */
@@ -27,7 +28,7 @@ header {
 
 
 /*Navigation Styling*/
-nav {
+nav { 
     border: 2px solid #0000ff;
     width: 100%;
     padding: 0px;
@@ -36,11 +37,7 @@ nav {
     background-color: #0000ff;
     
 }
-body {
-    font-family : Arial, Verdana, Arial, Helvetica, sans-serif;
-    
-  
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -57,7 +54,7 @@ nav li {
 nav a { 
     text-decoration: none;
     color:#fff;
-    font-weight: none;
+    font-weight: normal;
 
 }
 
@@ -70,28 +67,58 @@ main {
     padding: 20px;
     margin: 0px auto;
     max-width: 800px;
-    box-shadow: none;
+    
     
 }
 
-/*Header Image*/
+/* Header Image */
 #header-image {
-    display: block;
-    margin: 0 auto;
-    width: 1000px;
-    height: 200px; 
-    justify-content: center; 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    max-width: 100%; 
 }
+
 
 
 /* Footer Styling */
 footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 10px 20px;
     background: #0000ff;
     color: #fff;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
     border-radius: 0px;
 }
 
+/* Void Button Styling */
+#openModalBtn {
+    display: block; 
+    margin: 50px auto; 
+    padding: 20px 40px; 
+    font-size: 24px; 
+    background-color: #0000ff; 
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    text-transform: uppercase; 
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#openModalBtn:hover {
+    background-color: #ff5b22; 
+}
+
+.video{
+    margin: auto;
+    
+}
+
+
+    
