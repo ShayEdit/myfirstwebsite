@@ -6,7 +6,7 @@
     <title>Quizzes</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        h1 {
+        h1,h2 {
             text-align: center;
         }
         
@@ -30,10 +30,12 @@
    <main>
        <img src="quizzes.png" alt="The Zone Logo" id="header-image">
    </main>
-
+   <br>
    <main class="grid-container">
+<h2>What chore you've been avoiding should you do today? </h2>
+  
        <section class="quiz">
-           <form name="quiz"> 
+           <form name="quiz1"> 
                <fieldset>
                    <legend>What is your favourite colour?</legend>
                    <input type="radio" name="colour" value="pink"> Pink
@@ -64,6 +66,46 @@
                    <input type="radio" name="hobby" value="music"> Listen to music
                    <input type="radio" name="hobby" value="walk"> Go for a walk
                    <input type="radio" name="hobby" value="exercise"> Exercise
+               </fieldset>
+               <br>
+               <button type="button" onclick="checkAnswers()">Submit</button>
+           </form>
+       </section>
+
+       <h2>What screen-free activity should you do today?</h2>
+  
+       <section class="quiz">
+           <form name="quiz2"> 
+               <fieldset>
+                   <legend>What is your favourite item of clothing?</legend>
+                   <input type="radio" name="clothing" value="trousers"> Trousers
+                   <input type="radio" name="clothing" value="hoodie"> Hoodie
+                   <input type="radio" name="clothing" value="tshirt"> T-shirt
+                   <input type="radio" name="clothing" value="onesie"> Onesie
+               </fieldset>
+
+               <fieldset>
+                   <legend>What is your favourite place to relax?</legend>
+                   <input type="radio" name="relax" value="sofa"> Sofa
+                   <input type="radio" name="relax" value="bed">Bed
+                   <input type="radio" name="relax" value="outside">Outside
+                   <input type="radio" name="relax" value="kitchen">Kitchen
+               </fieldset>
+
+               <fieldset>
+                   <legend>What is your favourite hobby?</legend>
+                   <input type="radio" name="hobby" value="videogame"> Video Games
+                   <input type="radio" name="hobby" value="reading"> Reading
+                   <input type="radio" name="hobby" value="movies"> Movies
+                   <input type="radio" name="hobby" value="cooking"> Cooking
+               </fieldset>
+
+               <fieldset>
+                   <legend>Which historical figure would you most like to have lunch with?</legend>
+                   <input type="radio" name="figure" value="jesus"> Jesus
+                   <input type="radio" name="figure" value="cleopatra"> Cleopatra
+                   <input type="radio" name="figure" value="einstein"> Einstein
+                   <input type="radio" name="figure" value="mlk"> Martin Luther King
                </fieldset>
                <br>
                <button type="button" onclick="checkAnswers()">Submit</button>

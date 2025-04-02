@@ -1,9 +1,10 @@
+//QUIZ 1
 function checkAnswers() {
     let score = 0;
     let result = "";
 
     // Get the form elements
-    let quiz = document.forms["quiz"];
+    let quiz = document.forms["quiz1"];
 
     // Ensure a selection is made for each question
     if (!quiz.colour.value || !quiz.animal.value || !quiz.music.value || !quiz.hobby.value) {
@@ -37,13 +38,71 @@ function checkAnswers() {
     else score += 4;
 
     // Determine result based on the score
-    if (score < 6) result = "HTML";
-    else if (score < 10) result = "Python";
-    else if (score < 13) result = "JavaScript";
-    else result = "Java";
+    if (score < 6) result = "Laundry";
+    else if (score < 10) result = "Dishes";
+    else if (score < 13) result = "Vacuuming";
+    else result = "Dusting";
 
     // Show the result
-    alert(`The programming language you should learn is ${result}`);
+    alert(`The chore you should do today is ${result}`);
+}
+
+// Ensure the function is bound correctly
+document.addEventListener("DOMContentLoaded", function () {
+    let submitButton = document.querySelector("button");
+    if (submitButton) {
+        submitButton.addEventListener("click", checkAnswers);
+    }
+});
+
+//QUIZ 2
+
+function checkAnswers() {
+    let score = 0;
+    let result = "";
+
+    // Get the form elements
+    let quiz = document.forms["quiz2"];
+
+    // Ensure a selection is made for each question
+    if (!quiz.clothing.value || !quiz.relax.value || !quiz.hobby.value || !quiz.figure.value) {
+        alert("Please answer all the questions.");
+        return;
+    }
+
+    // Calculate the score based on answers
+    let answer1 = quiz.clothing.value;
+    if (answer1 === "trousers") score += 1;
+    else if (answer1 === "hoodie") score += 2;
+    else if (answer1 === "tshirt") score += 3;
+    else score += 4;
+
+    let answer2 = quiz.relax.value;
+    if (answer2 === "sofa") score += 1;
+    else if (answer2 === "bed") score += 2;
+    else if (answer2 === "outside") score += 3;
+    else score += 4;
+
+    let answer3 = quiz.hobby.value;
+    if (answer3 === "videogame") score += 1;
+    else if (answer3 === "reading") score += 2;
+    else if (answer3 === "movies") score += 3;
+    else score += 4;
+
+    let answer4 = quiz.figure.value;
+    if (answer4 === "jesus") score += 1;
+    else if (answer4 === "cleopatra") score += 2;
+    else if (answer4 === "einstein") score += 3;
+    else score += 4;
+
+    // Determine result based on the score
+    if (score < 6) result = "Puzzle";
+    else if (score < 10) result = "Nature Walk";
+    else if (score < 13) result = "Meditate";
+    else result = "Write a short story";
+
+    // Show the result
+    alert(`The chore you should do today is ${result}`);
 }
 
 // Ensure the function is bound correctly
