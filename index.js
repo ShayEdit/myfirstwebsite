@@ -1,5 +1,5 @@
 //QUIZ 1
-function checkQuiz1Answers() {
+function checkquiz1Answers() {
     let score = 0;
     let result = "";
 
@@ -49,15 +49,19 @@ function checkQuiz1Answers() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let submitButton = document.querySelector("button");
-    if (submitButton) {
-        submitButton.addEventListener("click", checkAnswers);
+    let submitQuiz1 = document.querySelector("submitQuiz1");
+    let submitQuiz2 = document.querySelector("submitQuiz2");
+    if (submitQuiz1) {
+        submitQuiz1.addEventListener("click", checkquiz1Answers);
+    }
+    if (submitQuiz2) {
+        submitQuiz2.addEventListener("click", checkquiz2Answers);
     }
 });
 
 //QUIZ 2
 
-function checkQuiz2Answers() {
+function checkquiz2Answers() {
     let score = 0;
     let result = "";
 
@@ -107,8 +111,12 @@ function checkQuiz2Answers() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let submitButton = document.querySelector("button");
-    if (submitButton) {
-        submitButton.addEventListener("click", checkAnswers);
+    let submitQuiz1 = document.querySelector("submitQuiz1");
+    let submitQuiz2 = document.querySelector("submitQuiz2");
+    if (submitQuiz1) {
+        submitQuiz1.addEventListener("click", checkquiz1Answers);
+    }
+    if (submitQuiz2) {
+        submitQuiz2.addEventListener("click", checkquiz2Answers);
     }
 });
