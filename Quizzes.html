@@ -22,7 +22,7 @@
    <!-- Navigation Bar-->
    <div id="navbar"></div>
    <script>
-       fetch(`navbar.html`) 
+       fetch("navbar.html") 
        .then(response => response.text())
        .then(data => document.getElementById(`navbar`).innerHTML = data);
    </script>
@@ -32,10 +32,10 @@
    </main>
    <br>
    <main class="grid-container">
-<h2>What chore you've been avoiding should you do today? </h2>
+<h2>Which chore you've been avoiding should you do today? </h2>
   
-       <section class="Quiz1">
-           <form name="Quiz1"> 
+       <section class="quiz1">
+           <form name="quiz1"> 
                <fieldset>
                    <legend>What is your favourite colour?</legend>
                    <input type="radio" name="colour" value="pink"> Pink
@@ -68,14 +68,16 @@
                    <input type="radio" name="hobby" value="exercise"> Exercise
                </fieldset>
                <br>
-               <button type="button" id="submitQuiz1" onclick="checkAnswers()">Submit</button>
+               <button type="button" id="submitQuiz1" onclick="checkQuiz1Answers()">Submit</button>
+               <button type="button" id="submitQuiz2" onclick="checkQuiz2Answers()">Submit</button>
+               
            </form>
        </section>
-
+<br>
        <h2>What screen-free activity should you do today?</h2>
   
-       <section class="Quiz2">
-           <form name="Quiz2"> 
+       <section class="quiz2">
+           <form name="quiz2"> 
                <fieldset>
                    <legend>What is your favourite item of clothing?</legend>
                    <input type="radio" name="clothing" value="trousers"> Trousers
@@ -87,9 +89,9 @@
                <fieldset>
                    <legend>What is your favourite place to relax?</legend>
                    <input type="radio" name="relax" value="sofa"> Sofa
-                   <input type="radio" name="relax" value="bed">Bed
-                   <input type="radio" name="relax" value="outside">Outside
-                   <input type="radio" name="relax" value="kitchen">Kitchen
+                   <input type="radio" name="relax" value="bed"> Bed
+                   <input type="radio" name="relax" value="outside"> Outside
+                   <input type="radio" name="relax" value="kitchen"> Kitchen
                </fieldset>
 
                <fieldset>
@@ -108,7 +110,9 @@
                    <input type="radio" name="figure" value="mlk"> Martin Luther King
                </fieldset>
                <br>
-               <button type="button" id="submitQuiz2" onclick="checkAnswers()">Submit</button>
+               <button type="button" id="submitQuiz1" onclick="checkQuiz1Answers()">Submit</button>
+               <button type="button" id="submitQuiz2" onclick="checkQuiz2Answers()">Submit</button>
+               
            </form>
        </section>
    </main>
@@ -118,4 +122,8 @@
    </footer>
 
    <script src="index.js"></script> 
+   <script>
+    
+    console.log("THE ZONE");
+</script>
 </html>

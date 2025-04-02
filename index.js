@@ -1,5 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let submitQuiz1 = document.querySelector("#submitQuiz1");
+    let submitQuiz2 = document.querySelector("#submitQuiz2");
+    if (submitQuiz1) {
+        submitQuiz1.addEventListener("click", checkQuiz1Answers);
+    }
+    if (submitQuiz2) {
+        submitQuiz2.addEventListener("click", checkQuiz2Answers);
+    }
+});
+
 //QUIZ 1
-function checkquiz1Answers() {
+function checkQuiz1Answers() {
     let score = 0;
     let result = "";
 
@@ -7,9 +18,14 @@ function checkquiz1Answers() {
     let quiz1 = document.forms["quiz1"];
 
     // Ensure a selection is made for each question
-    if (!quiz1.colour.value || !quiz1.animal.value || !quiz1.music.value || !quiz1.hobby.value) {
-        alert("Please answer all the questions.");
-        return;
+    if (![...quiz1.colour].some(r => r.checked) || 
+    ![...quiz1.animal].some(r => r.checked) || 
+    ![...quiz1.music].some(r => r.checked) || 
+    ![...quiz1.hobby].some(r => r.checked)) {
+    alert("Please answer all the questions.");
+    return;
+}
+
     }
 
     // Calculate the score based on answers
@@ -45,23 +61,11 @@ function checkquiz1Answers() {
 
     // Show the result
     alert(`The chore you should do today is ${result}`);
-}
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    let submitQuiz1 = document.querySelector("submitQuiz1");
-    let submitQuiz2 = document.querySelector("submitQuiz2");
-    if (submitQuiz1) {
-        submitQuiz1.addEventListener("click", checkquiz1Answers);
-    }
-    if (submitQuiz2) {
-        submitQuiz2.addEventListener("click", checkquiz2Answers);
-    }
-});
 
 //QUIZ 2
 
-function checkquiz2Answers() {
+function checkQuiz2Answers() {
     let score = 0;
     let result = "";
 
@@ -110,13 +114,3 @@ function checkquiz2Answers() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let submitQuiz1 = document.querySelector("submitQuiz1");
-    let submitQuiz2 = document.querySelector("submitQuiz2");
-    if (submitQuiz1) {
-        submitQuiz1.addEventListener("click", checkquiz1Answers);
-    }
-    if (submitQuiz2) {
-        submitQuiz2.addEventListener("click", checkquiz2Answers);
-    }
-});
