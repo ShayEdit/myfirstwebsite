@@ -1,5 +1,5 @@
 //QUIZ 1
-function checkAnswers() {
+function checkQuiz1Answers() {
     let score = 0;
     let result = "";
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //QUIZ 2
 
-function checkAnswers() {
+function checkQuiz2Answers() {
     let score = 0;
     let result = "";
 
