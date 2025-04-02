@@ -4,34 +4,34 @@ function checkAnswers() {
     let result = "";
 
     // Get the form elements
-    let quiz = document.forms["quiz1"];
+    let quiz1 = document.forms["quiz1"];
 
     // Ensure a selection is made for each question
-    if (!quiz.colour.value || !quiz.animal.value || !quiz.music.value || !quiz.hobby.value) {
+    if (!quiz1.colour.value || !quiz1.animal.value || !quiz1.music.value || !quiz1.hobby.value) {
         alert("Please answer all the questions.");
         return;
     }
 
     // Calculate the score based on answers
-    let answer1 = quiz.colour.value;
+    let answer1 = quiz1.colour.value;
     if (answer1 === "pink") score += 1;
     else if (answer1 === "yellow") score += 2;
     else if (answer1 === "green") score += 3;
     else score += 4;
 
-    let answer2 = quiz.animal.value;
+    let answer2 = quiz1.animal.value;
     if (answer2 === "red-panda") score += 1;
     else if (answer2 === "giraffe") score += 2;
     else if (answer2 === "jaguar") score += 3;
     else score += 4;
 
-    let answer3 = quiz.music.value;
+    let answer3 = quiz1.music.value;
     if (answer3 === "pop") score += 1;
     else if (answer3 === "hip-hop") score += 2;
     else if (answer3 === "rock") score += 3;
     else score += 4;
 
-    let answer4 = quiz.hobby.value;
+    let answer4 = quiz1.hobby.value;
     if (answer4 === "read") score += 1;
     else if (answer4 === "music") score += 2;
     else if (answer4 === "walk") score += 3;
@@ -62,34 +62,34 @@ function checkAnswers() {
     let result = "";
 
     // Get the form elements
-    let quiz = document.forms["quiz2"];
+    let quiz2 = document.forms["quiz2"];
 
     // Ensure a selection is made for each question
-    if (!quiz.clothing.value || !quiz.relax.value || !quiz.hobby.value || !quiz.figure.value) {
+    if (!quiz2.clothing.value || !quiz2.relax.value || !quiz2.hobby.value || !quiz2.figure.value) {
         alert("Please answer all the questions.");
         return;
     }
 
     // Calculate the score based on answers
-    let answer1 = quiz.clothing.value;
+    let answer1 = quiz2.clothing.value;
     if (answer1 === "trousers") score += 1;
     else if (answer1 === "hoodie") score += 2;
     else if (answer1 === "tshirt") score += 3;
     else score += 4;
 
-    let answer2 = quiz.relax.value;
+    let answer2 = quiz2.relax.value;
     if (answer2 === "sofa") score += 1;
     else if (answer2 === "bed") score += 2;
     else if (answer2 === "outside") score += 3;
     else score += 4;
 
-    let answer3 = quiz.hobby.value;
+    let answer3 = quiz2.hobby.value;
     if (answer3 === "videogame") score += 1;
     else if (answer3 === "reading") score += 2;
     else if (answer3 === "movies") score += 3;
     else score += 4;
 
-    let answer4 = quiz.figure.value;
+    let answer4 = quiz2.figure.value;
     if (answer4 === "jesus") score += 1;
     else if (answer4 === "cleopatra") score += 2;
     else if (answer4 === "einstein") score += 3;
